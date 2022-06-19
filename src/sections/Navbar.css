@@ -1,0 +1,55 @@
+.navbar{
+    position:fixed;
+    top: 0px;
+display: flex;
+z-index: 4;
+width: 100%;
+flex-direction: column;
+padding:0px 10px;
+background-color:#1e1229;
+align-items: center;
+z-index: 20;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 5%;
+    size: 50%;
+    padding: 10px 0px;
+    
+}
+.links{
+    text-transform: capitalize;
+    height: 50vh;
+    transition: all 0.2s;
+    overflow: hidden;
+    text-align: center;
+    cursor:grab;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.bread{
+    display: flex;
+}
+.closed{
+    height: 0px;
+
+}
+.links a{
+    text-decoration: none;
+    color: white;
+    /* padding: 4px; */
+    /* margin: 4px; */
+}
+.links a:hover{
+  opacity: 0.8;
+}
+.zippylogo{
+   /* size: 50%;
+    */
+   height: 5vh;
+    margin-left: 4vw;
+}
