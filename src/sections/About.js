@@ -13,37 +13,32 @@ function Lastsecond() {
 
   const [indoor, setIndoor] = React.useState(false);
 
-  
+
   return (
     <>
       <div className="abt-cont">
-
-
         <div className="footer-info" id="about">
           <div className="title">
             zippy is
-            our passion. That's really about us!
+            our passion. that's really about us!
           </div>
           <div className="foot-para">
             As life long runners and athletes - we know running's impact on our physical health and fitness is only a miniscule or just a nice side-effect. The real prize is the runner's high - the feeling of joy and accomplishment that leads to a better quality-of-life. The happiness that lingers on far beyond the finishing mile.
             <br />
             If you are a regular runner - you know this already. And we want to partner with you as fellow runners to ensure you get more out of your runs. That your runs are not dependent on outdoor conditions such as weather, pollution, traffic conditions and at the same time - they are not boring or monotonous.
             <span>
-              <br />At Zippy- <br />
+              <br /><br />At Zippy- <br />
               Our vision is to make running as immersive and entertaining as playing a console game; yet at the same time as scientific and effective as an Olympians' prep work.
 
             </span>
           </div>
-
-
         </div>
+
         <div className="profiles-cont">
           <div className="profile-card">
             <div className="profile-img">
               <span>
-                Dr. Rath is an astute investor, Physician-Scientist, Behavioral Expert. He specializes in building innovative health solutions at the intersection of modern technology and the deep domain of medical sciences. Dr. Rath brings his deep expertise as well as innovation expertise to build great products with deeper consumer insights at Zippy
-                Dr. Satish Rath
-                Advisor
+                Sunny's intro has to come here.
               </span>
               <img src="sunny.jpg"></img>
 
@@ -59,10 +54,9 @@ function Lastsecond() {
           </div>
           <div className="profile-card">
             <div className="profile-img">
-              <span>
-              Ravi is a prolific Investor and a Serial Entrepreneur and has successfully built companies and has helped speed scale multiple technology startups. Through his Family Office - he has invested in start-ups & venture funds that span interests in Technology investments, Real estates, education institutes & infrastructure. He is a pro athlete and a swimming champion.  Dr. Rath is an astute investor, Physician-Scientist, Behavioral Expert. He specializes in building innovative health solutions at the intersection of modern technology and the deep domain of medical sciences. Dr. Rath brings his deep expertise as well as innovation expertise to build great products with deeper consumer insights at Zippy
-                Dr. Satish Rath
-                Advisor
+              <span style={{ fontSize: '0.75rem'}}>
+              Ravi is a prolific Investor and a Serial Entrepreneur and has successfully built companies and has helped speed scale multiple technology startups. Through his Family Office - he has invested in start-ups & venture funds that span interests in Technology investments, Real estates, education institutes & infrastructure. He is a pro athlete and a swimming champion.  Dr. Rath is an astute investor, Physician-Scientist, Behavioral Expert. He specializes in building innovative health solutions at the intersection of modern technology and the deep domain of medical sciences. Dr. Rath brings his deep expertise as well as innovation expertise to build great products with deeper consumer insights at Zippy.
+                
               </span>
               <img src="RaviReddy.png"></img>
 
@@ -81,11 +75,10 @@ function Lastsecond() {
           <div className="profile-card">
             <div className="profile-img">
               <span>
-                Dr. Rath is an astute investor, Physician-Scientist, Behavioral Expert. He specializes in building innovative health solutions at the intersection of modern technology and the deep domain of medical sciences. Dr. Rath brings his deep expertise as well as innovation expertise to build great products with deeper consumer insights at Zippy
-                Dr. Satish Rath
-                Advisor
+                Dr. Rath is an astute investor, Physician-Scientist, Behavioral Expert. He specializes in building innovative health solutions at the intersection of modern technology and the deep domain of medical sciences. Dr. Rath brings his deep expertise as well as innovation expertise to build great products with deeper consumer insights at Zippy.
+                
               </span>
-              <img src="Ravi.jpg"></img>
+              <img src="SatishRath.jpg"></img>
 
             </div>
             <div className="profile-info" >
@@ -98,6 +91,7 @@ function Lastsecond() {
             </div>
           </div>
         </div>
+        <br/><br/><br/>
       </div>
     </>
   )

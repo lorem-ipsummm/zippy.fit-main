@@ -4,6 +4,7 @@ import First from './sections/First';
 import Second from './sections/Second';
 import Third from './sections/Third';
 import Fourth from './sections/Fourth';
+import Contact_Us from './sections/Contact_Us';
 import Fifth from './sections/Fifth';
 import Sixth from './sections/Sixth';
 // import Seventh from './sections/seventh';
@@ -26,29 +27,13 @@ function App() {
    
    <BrowserRouter>
     <Routes>
-    <Route path="/" element={<Navigate to="/home"/>} />
+    {/* <Route path="/" element={<Navigate to="/home"/>} /> */}
 
         <Route path="/Home" element={<Home />} />
         <Route path="/Whitelist" element={<WhiteList />} />
-
-        {/* /contact-us */}
-     {/* </Route> */}
-
-
-{/* 
-<Route path='/' element={ <Navbar/>} >
-<Route path='home' element={  <WhiteList/>}/>
-
-    <Route path='/h' element={  <HeroSection/>}/> */}
-
-
-{/* </Route> */}
-    
-{/*   
-    
-  <Footer/> */}
-
-    </Routes></BrowserRouter>
+<Route path="/ContactUs" element={<Contact_Us/>}/>
+</Routes>
+    </BrowserRouter>
    
    
     </>

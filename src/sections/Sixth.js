@@ -63,7 +63,7 @@ Don't have compatible hardware.
     <>
       <div className='main' id="howitworks" >
 
-        <b>How it works</b>
+        <b>how it works</b>
         <div className='.btn-cont'>
 
           <button className='btn' id={indoor ? "" : "outline"} onClick={() => setindoor(true)} href="#">Outdoor running</button>
@@ -85,6 +85,7 @@ Don't have compatible hardware.
 
 </>):""}
 <div>
+  <br/>
 <button className='btn dev'> Refer a friend</button>
 
 </div>
@@ -97,7 +98,7 @@ Don't have compatible hardware.
 
       </div>
       <div className="photo">
-      coming soon
+      {/* <span  style={{opacity: '0.4' , fontSize: '8rem' , fontWeight: '800'}}>coming soon</span> */}
       </div>
     </>
   )
