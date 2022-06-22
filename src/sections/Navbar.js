@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+
 import "./Navbar.css"
 import { Outlet, Link, useNavigate } from "react-router-dom";
 function Navbar() {
@@ -9,7 +10,7 @@ function Navbar() {
   return (
     <div className='navbar' >
       <div className='menu'>
-        <img src='logowhite.svg' className='zippylogo'></img>
+      <Link to={{ pathname: "/home", }}><img src='logowhite.svg' className='zippylogo'></img></Link>
         <div className="bread" onClick={() => setlinksopen(!linksopen)} >
           <img height={30} src='menu.svg'>
           </img>

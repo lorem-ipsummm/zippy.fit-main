@@ -1,0 +1,16 @@
+.whitelist-cont{
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.whitelist-info{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5vw;
+}
+.titlex{
+    margin-top: 3%;
+}

@@ -71,3 +71,47 @@ text-align: center;
  .ph-child img{
      margin-bottom: 5vh;
  }
+ .badge{
+	border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	background: rgba(31,206,255,1);
+	border: 2px solid white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top: -15px;
+	right: -15px;
+	transition: all .3s;
+}
+.refer{
+    height: 50%;
+    width: 50%;
+}
+#referf{
+    background-color: white;
+    color: black;
+}
+.whitelist-info button{
+    width: 10%;
+ font-weight: 700;
+ font-size: 1.2rem;
+    position: relative;
+    /* top: -1px; */
+    background-color: #0086FB;
+    color: white;
+    outline: none;
+    border: none;
+    height: 6vh;
+z-index: 2;
+}
+
+.whitelist-info input{
+    height: 3vh;
+    outline: 2px;
+    border: #000;
+    padding: 20px;
+width: 40%;
+}

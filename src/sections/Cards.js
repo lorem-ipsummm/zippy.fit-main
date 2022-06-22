@@ -136,7 +136,7 @@ function Cards() {
 
           </div>
           <button onClick={() => {
-            window.location.assign("mailto:xyz@abc.com");
+            window.location.assign("mailto:sunny@zippy.fit");
           }} className='btn add'> Write To Us</button>
           {/* <p>Get your club enlisted</p> */}
 

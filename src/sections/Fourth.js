@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import "./second.css"
 function Fourth() {
     return (
@@ -14,7 +15,8 @@ function Fourth() {
             <span style={{marginTop:'20px', textAlign: 'center'}}> to unlock progressive NFT elements such as avatars, <br/>upperwears and bottomwears to participate in ZIPPY’s<br/>open and persistent world. </span>
             </div>
            <img src='grind.gif' alt=''  style={{ height:'450',marginTop:'1vh'}}></img>
-           <button className='btn'  href="#">Whitelist Me</button>
+           <Link to={{ pathname: "/whitelist", }}>
+           <button className='btn'  href="#">Whitelist Me</button></Link>
             <br/>
         </div>
     );

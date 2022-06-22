@@ -19,6 +19,8 @@ import Footer from './sections/Footer';
 import Cards from './sections/Cards';
 import Navbar from './sections/Navbar';
 import WhiteList from './sections/WhiteList';
+import TnC from './sections/TnC';
+import Privacy_policy from './sections/Privacy_policy';
 import { home } from 'fontawesome';
 import {Navigate} from "react-router-dom"
 function App() {
@@ -32,6 +34,8 @@ function App() {
         <Route path="/Home" element={<Home />} />
         <Route path="/Whitelist" element={<WhiteList />} />
 <Route path="/ContactUs" element={<Contact_Us/>}/>
+<Route path="/TnCs" element={<TnC/>}/>
+<Route path="/PrivacyPolicy" element={<Privacy_policy/>}/>
 </Routes>
     </BrowserRouter>
    

@@ -31,7 +31,8 @@ overflow: hidden;
 /* padding: 0px; */
 border-radius:50px;
 border: 2px solid rgb(202, 202, 202);
-}.whitelist-info button{
+}
+.whitelist-info button{
     width: 40%;
  font-weight: 700;
  font-size: 1.2rem;

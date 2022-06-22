@@ -23,9 +23,9 @@ function Lastsecond() {
             our passion. that's really about us!
           </div>
           <div className="foot-para">
-            As life long runners and athletes - we know running's impact on our physical health and fitness is only a miniscule or just a nice side-effect. The real prize is the runner's high - the feeling of joy and accomplishment that leads to a better quality-of-life. The happiness that lingers on far beyond the finishing mile.
-            <br />
-            If you are a regular runner - you know this already. And we want to partner with you as fellow runners to ensure you get more out of your runs. That your runs are not dependent on outdoor conditions such as weather, pollution, traffic conditions and at the same time - they are not boring or monotonous.
+            We are a team of 'Athletes First' and 'Technologists Later'. At Zippy - Our only job is to make fitness and all things around it simple, sustainable and sticking for our users. We achieve this by combining the principles of technology including AI, blockchain, gamification fused with behavioral & nudge economics and deeper subject matter expertise on fitness and wellness. 
+            <br /><br />
+              Our core team comprises serial entrepreneurs with decades of experience in building category leading ventures, technologists with decades of experience in building complex state of the art tech products and medical professionals with decades of experience in wellness and fitness ventures. 
             <span>
               <br /><br />At Zippy- <br />
               Our vision is to make running as immersive and entertaining as playing a console game; yet at the same time as scientific and effective as an Olympians' prep work.
@@ -37,8 +37,8 @@ function Lastsecond() {
         <div className="profiles-cont">
           <div className="profile-card">
             <div className="profile-img">
-              <span>
-                Sunny's intro has to come here.
+              <span style={{ width: '250px'}}>
+              <br/>Sunny is a serial entrepreneur with 14 years of experience in building technology focused businesses in new categories. <br/><br/>At Zippy - Sunny is focused on building a strong fitness focused venture.
               </span>
               <img src="sunny.jpg"></img>
 
@@ -49,14 +49,14 @@ function Lastsecond() {
                 <br />
                 <span> Founder</span>
               </div>
-              <img height={30} src="linkedin.png"></img>
+              <a href="https://www.linkedin.com/in/sunnymakroo/" target="_blank"><img height={30} src="linkedin.png"></img></a>
             </div>
           </div>
           <div className="profile-card">
             <div className="profile-img">
-              <span style={{ fontSize: '0.75rem'}}>
-              Ravi is a prolific Investor and a Serial Entrepreneur and has successfully built companies and has helped speed scale multiple technology startups. Through his Family Office - he has invested in start-ups & venture funds that span interests in Technology investments, Real estates, education institutes & infrastructure. He is a pro athlete and a swimming champion.  Dr. Rath is an astute investor, Physician-Scientist, Behavioral Expert. He specializes in building innovative health solutions at the intersection of modern technology and the deep domain of medical sciences. Dr. Rath brings his deep expertise as well as innovation expertise to build great products with deeper consumer insights at Zippy.
-                
+              <span>
+                Ravi is a prolific Investor and a Serial Entrepreneur and has successfully built companies and has helped speed scale multiple technology startups. Through his Family Office - he has invested in start-ups & venture funds that span interests in Technology investments, Real estates, education institutes & infrastructure. He is a pro athlete and a swimming champion.
+
               </span>
               <img src="RaviReddy.png"></img>
 
@@ -67,16 +67,16 @@ function Lastsecond() {
                 <br />
                 <span>Advisor & Investor </span>
               </div>
-              <img height={30} src="linkedin.png"></img>
+              <a href="https://www.linkedin.com/in/sunnymakroo/" target="_blank"><img height={30} src="linkedin.png"></img></a>
             </div>
           </div>
 
 
           <div className="profile-card">
             <div className="profile-img">
-              <span>
-                Dr. Rath is an astute investor, Physician-Scientist, Behavioral Expert. He specializes in building innovative health solutions at the intersection of modern technology and the deep domain of medical sciences. Dr. Rath brings his deep expertise as well as innovation expertise to build great products with deeper consumer insights at Zippy.
-                
+              <span >
+                <br/>Dr. Rath is an astute investor, Physician-Scientist, Behavioral Expert. He specializes in building innovative health solutions at the intersection of modern technology and the deep domain of medical sciences. Dr. Rath brings his deep expertise as well as innovation expertise to build great products with deeper consumer insights at Zippy.
+
               </span>
               <img src="SatishRath.jpg"></img>
 
@@ -87,11 +87,11 @@ function Lastsecond() {
                 <br />
                 <span>Advisor</span>
               </div>
-              <img height={30} src="linkedin.png"></img>
+              <a href="https://www.linkedin.com/in/sunnymakroo/" target="_blank"><img height={30} src="linkedin.png"></img></a>
             </div>
           </div>
         </div>
-        <br/><br/><br/>
+        <br /><br /><br />
       </div>
     </>
   )

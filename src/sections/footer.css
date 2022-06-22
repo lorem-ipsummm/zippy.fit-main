@@ -26,7 +26,7 @@ body{
   }
   
   .footer .row a:hover{
-  color:#fff;
+  color:#ccc;
   }
   
   .footer .row ul{
@@ -35,12 +35,12 @@ body{
   
   .footer .row ul li{
   display:inline-block;
-  margin:0px 30px;
+  margin:10px 30px;
   }
   
   .footer .row a i{
   font-size:2em;
-  margin:0% 1%;
+  margin:10% 1%;
   }
   .row svg{
     height: 30px;
@@ -73,6 +73,6 @@ font-weight: 700;
   text-align:left;
   }
   .footer .row a i{
-  margin:0% 3%;
+  margin:0% 10%;
   }
   }
