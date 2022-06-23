@@ -67,7 +67,7 @@ function Lastsecond() {
                 <br />
                 <span>Advisor & Investor </span>
               </div>
-              <a href="https://www.linkedin.com/in/sunnymakroo/" target="_blank"><img height={30} src="linkedin.png"></img></a>
+              <a href="https://www.linkedin.com/in/ravi-reddy-investor/" target="_blank"><img height={30} src="linkedin.png"></img></a>
             </div>
           </div>
 
@@ -87,7 +87,7 @@ function Lastsecond() {
                 <br />
                 <span>Advisor</span>
               </div>
-              <a href="https://www.linkedin.com/in/sunnymakroo/" target="_blank"><img height={30} src="linkedin.png"></img></a>
+              <a href="https://www.linkedin.com/in/dr-satish-prasad-rath-abb3404b/" target="_blank"><img height={30} src="linkedin.png"></img></a>
             </div>
           </div>
         </div>

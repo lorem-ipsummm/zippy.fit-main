@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import "./sixth.css";
-import "./Whitelist.css";
 function Sixth() {
   const [indoor, setindoor] = useState(true)
   const inorout = indoor ? (<>
@@ -112,22 +111,22 @@ function Sixth() {
             modal.style.display = "none";
           }} class="close">&times;</span>
           <img className='refer' src='whitelist.png' alt=''>
-          </img><br/><br/>
+          </img><br /><br />
           <p>Spread the word.</p>
-          <br/>
+          <br />
           <div>
             Your 3 months subscription is on us. When you refer your friend - you get
             additional 1 month complimentary and your friend gets 3 months.
             thanks to you!
-          </div> <br/>
+          </div> <br />
           {/* <button onClick={() => {
             window.location.assign("mailto:sunny@zippy.fit");
           }} className='btn add'> Write To Us</button> */}
           {/* <p>Get your club enlisted</p> */}
-          <form method='POST' className='whitelist-info'>
-        <input type="text" name= "email" placeholder='adam.smith@example.com' required/>
-        <button type='submit'> Add friend </button>
-    </form>
+          <form method='POST'>
+            <input className="inp" type="text" name="email" placeholder='adam.smith@example.com' required />
+            <br/><button className='btn2' type='submit'> Add friend </button>
+          </form>
         </div>
 
       </div>

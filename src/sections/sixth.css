@@ -94,24 +94,17 @@ text-align: center;
     background-color: white;
     color: black;
 }
-.whitelist-info button{
-    width: 10%;
- font-weight: 700;
- font-size: 1.2rem;
-    position: relative;
-    /* top: -1px; */
-    background-color: #0086FB;
-    color: white;
-    outline: none;
-    border: none;
-    height: 6vh;
-z-index: 2;
-}
 
-.whitelist-info input{
+.inp{
     height: 3vh;
     outline: 2px;
-    border: #000;
+    border: 1px solid #000;
+    border-radius: 50px;
     padding: 20px;
-width: 40%;
+    width: 80%;
+}
+.btn2{
+    background-color: #000;
+    color: white;
+    width: 60%;
 }
