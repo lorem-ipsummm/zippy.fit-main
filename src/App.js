@@ -22,14 +22,15 @@ import WhiteList from './sections/WhiteList';
 import TnC from './sections/TnC';
 import Privacy_policy from './sections/Privacy_policy';
 import { home } from 'fontawesome';
-import {Navigate} from "react-router-dom"
+import {Navigate,useLocation} from "react-router-dom"
 function App() {
+
   return (
     <>
    
    <BrowserRouter>
     <Routes>
-    {/* <Route path="/" element={<Navigate to="/home"/>} /> */}
+    <Route exact path="/" element={<Navigate to="/home"/>} />
 
         <Route path="/Home" element={<Home />} />
         <Route path="/Whitelist" element={<WhiteList />} />

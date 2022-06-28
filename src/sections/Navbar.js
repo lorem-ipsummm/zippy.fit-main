@@ -7,6 +7,7 @@ function Navbar() {
   // console.log();
   const nav = useNavigate();
   const path = document.location.pathname
+  console.log(path)
   return (
     <div className='navbar' >
       <div className='menu'>
@@ -17,17 +18,18 @@ function Navbar() {
         </div>
       </div>
       <div className={`links ${linksopen ? "closed" : ""}`}>
-        <a onClick={(e) => {
+        <a href='#howitworks' onClick={(e) => {
           setlinksopen(!linksopen)
           if (path == '/home') {
             document.querySelector("#howitworks")
             .scrollIntoView({ behavior: "smooth" });
           }
+        
           else nav('/home#howitworks')
 
 
         }}>How it works</a>
-        <a onClick={() => {
+        <a href='#about' onClick={() => {
           setlinksopen(!linksopen)
           if (path == '/home') {
             document.querySelector("#about")
