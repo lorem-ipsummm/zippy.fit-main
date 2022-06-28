@@ -76,17 +76,21 @@
     height: 50px;
 }
 
+.whitelist-img img {
+    height: 80vh;
+}
 @media only screen and (max-width: 600px) {
     .whitelist-cont {
         flex-direction: column;
     }
     .whitelist-info button{
-        font-size: 0.9rem;
+        font-size:0.9rem;
     }
 
     .whitelist-img img {
-      width: 100vw;
-      margin-top: 12vh;
+        width: 100vw;
+        height: auto;
+        margin-top: 10vh;
     }
 
 }
