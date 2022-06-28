@@ -66,7 +66,7 @@ function Sixth() {
         <div className='.btn-cont'>
 
           <button className='btn' id={indoor ? "" : "outline"} onClick={() => setindoor(true)} href="#">Outdoor running</button>
-          <button className='btn1' id={!indoor ? "" : "outline"} onClick={() => setindoor(false)} href="#">Indoor running<span className="badge">Coming soon</span></button>
+          <button className='btn1' id={!indoor ? "" : "outline"} onClick={() => setindoor(false)} href="#">Indoor running</button>
         </div>
         <div className='ph'>
 

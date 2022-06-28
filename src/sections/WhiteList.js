@@ -63,7 +63,7 @@ useEffect(()=>{
 <div className='whitelist-cont'>
 
 <div className='whitelist-img'>
-    <img src='whitelist.png' style={{ height: '519px', width: '547px' }} alt=''></img>
+    <img src='whitelist.png'  alt=''></img>
 
 </div>
 <div className='whitelist-info'>

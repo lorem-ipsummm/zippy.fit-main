@@ -80,9 +80,13 @@
     .whitelist-cont {
         flex-direction: column;
     }
+    .whitelist-info button{
+        font-size: 0.9rem;
+    }
 
     .whitelist-img img {
-        height: 50%;
+      width: 100vw;
+      margin-top: 12vh;
     }
 
 }

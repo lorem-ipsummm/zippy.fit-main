@@ -13,7 +13,7 @@ function HeroSection() {
       <span>
       Zippy is world’s first move to earn metaverse focused on outdoor and indoor runners, joggers and walkers.
       </span>
-      <button className='btn' onClick={()=> console.log("sad") }> How it works</button>
+      <button className='btn' > How it works</button>
         </div>
   )
 }
