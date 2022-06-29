@@ -65,7 +65,7 @@ function Contact_Us() {
     return (
         <>
             <Navbar />
-            <script src='https://zippy-388599458915141498.myfreshworks.com/crm/sales/web_forms/837a3365c12e44fe13ff35bf3411ef5197cd9402efecca48283189c1677946f7/form.js' crossorigin='anonymous' id='fs_837a3365c12e44fe13ff35bf3411ef5197cd9402efecca48283189c1677946f7'></script>
+            {/* <script src='https://zippy-388599458915141498.myfreshworks.com/crm/sales/web_forms/837a3365c12e44fe13ff35bf3411ef5197cd9402efecca48283189c1677946f7/form.js' crossorigin='anonymous' id='fs_837a3365c12e44fe13ff35bf3411ef5197cd9402efecca48283189c1677946f7'></script> */}
             <div className='contact' style={{ backgroundImage: 'url("Map.png")' }}>
                 <div className='title'>
                     contact <br /> us.
