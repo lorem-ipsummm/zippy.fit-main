@@ -81,7 +81,7 @@ function Contact_Us() {
                             value={email} placeholder='Email address'  />
                         <input value={message}
                             onChange={onMessageChange} placeholder='Message' type='text' />
-                        <button className='btn' onClick={(e) =>{e.preventDefault(); onSubmit()}}>Send</button>
+                        <input type="submit" className='btn' onClick={(e) =>{e.preventDefault(); onSubmit()}}>Send</input>
                     </form>
                     <span> Or write us on</span>
                     <div className='icons'>
