@@ -107,7 +107,6 @@ function Sixth() {
         <div class="modal-content">
           <span onClick={() => {
             var modal = document.getElementById("myModal2");
-
             modal.style.display = "none";
           }} class="close">&times;</span>
           <img className='refer' src='whitelist.png' alt=''>

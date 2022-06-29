@@ -7,7 +7,6 @@ function Navbar() {
   // console.log();
   const nav = useNavigate();
   const path = document.location.pathname
-  console.log(path)
   return (
     <div className='navbar' >
       <div className='menu'>
