@@ -1,7 +1,6 @@
 
 .contact{
     width: 100%;
-    height: 100vh;
     justify-content: space-between;
     color: white;
     display: flex;
@@ -22,7 +21,7 @@
     width: 30vw;
     margin-top: 30px;
     /* min-width: 400px; */
-    height: 80vh;
+    /* height: 80vh; */
     border: 1px solid white;
     border-radius: 20px;
     color: black;
@@ -62,11 +61,10 @@
     .contact span:nth-child(2)
     {
         display: flex;
-        background-color: #fff;
+  
     }
     .contact-child{
-        /* margin-top: 0px; */
-        height: 60vh;
+     
         width: 90vw;
     }
 }

@@ -28,13 +28,13 @@
 .whitelist-info form {
     outline: none;
     margin: 10px 0px;
-    height: 6vh;
+    height: 50px;
     z-index: 1;
 
     overflow: hidden;
     /* padding: 0px; */
     border-radius: 50px;
-    border: 2px solid rgb(202, 202, 202);
+    outline: 2px solid rgb(202, 202, 202);
 }
 
 .whitelist-info button {
@@ -45,9 +45,10 @@
     /* top: -1px; */
     background-color: #0086FB;
     color: white;
+
     outline: none;
     border: none;
-    height: 6vh;
+    height: 100%;
     z-index: 2;
 }
 
