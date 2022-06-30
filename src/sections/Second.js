@@ -16,7 +16,7 @@ function Second() {
         <button className='btn' style={{ marginLeft: "48px" }} href="#">Know More</button>
       </div>
       <div className='img-fifth'>
-        <img  src="second.png" alt='' />
+        <img id='second' src="second.png" alt='' />
       </div>
     </div>
   );

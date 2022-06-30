@@ -4,7 +4,7 @@ import "./second.css"
 function Fourth() {
     return (
 
-        <div className='d1 grind'>
+        <div className='grind'>
  <div className='text2'>
             <span>
             runners need to
@@ -14,7 +14,7 @@ function Fourth() {
             </span>
             <span style={{marginTop:'20px', textAlign: 'center'}}> to unlock progressive NFT elements such as avatars, <br/>upperwears and bottomwears to participate in ZIPPY’s<br/>open and persistent world. </span>
             </div>
-           <img src='grind.gif' alt=''  style={{ height:'450',marginTop:'1vh'}}></img>
+           <img id='grind-gif' src='grind.gif' alt=''  style={{ height:'450',marginTop:'1vh'}}></img>
            <Link to={{ pathname: "/whitelist", }}>
            <button className='btn'  href="#">Whitelist Me</button></Link>
             <br/>

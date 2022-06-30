@@ -9,8 +9,8 @@ import TnC from './sections/TnC';
 import Privacy_policy from './sections/Privacy_policy';
 import {Navigate} from "react-router-dom"
 function App() {
-  var ip = require("ip");
-  console.dir ( ip.address() );
+  // var ip = require("ip");
+  // console.dir ( ip.address() );
   return (
     <>
    

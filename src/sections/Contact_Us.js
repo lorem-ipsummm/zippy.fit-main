@@ -32,29 +32,29 @@ function Contact_Us() {
  
 
     const onSubmit =async () => {
-       console.log(email + name +message)
+    //    console.log(email + name +message)
 
-          if (!validateEmail(email) || !isEmpty(name) || !isEmpty(message)) {
+        //   if (!validateEmail(email) || !isEmpty(name) || !isEmpty(message)) {
           
    
-            return;
+        //     return;
 
-          } else {
-            setContactLoader(true);
-            const response = await axios.post(`${APIUrl}/api/v1/app/contact`, {
-              name,
-              email,
-              message,
-            });
-            if (response.data.status && response.data.code === 2006) {
-              alert("Message sent succesfully")
-              setName("");
-              setEmail("");
-              setMessage("");
+        //   } else {
+        //     setContactLoader(true);
+        //     const response = await axios.post(`${APIUrl}/api/v1/app/contact`, {
+        //       name,
+        //       email,
+        //       message,
+        //     });
+        //     if (response.data.status && response.data.code === 2006) {
+        //       alert("Message sent succesfully")
+        //       setName("");
+        //       setEmail("");
+        //       setMessage("");
             
-            }
+        //     }
           
-        }
+        // }
     };
 
     useEffect(() => {
@@ -65,7 +65,7 @@ function Contact_Us() {
     return (
         <>
             <Navbar />
-            {/* <script src='https://zippy-388599458915141498.myfreshworks.com/crm/sales/web_forms/837a3365c12e44fe13ff35bf3411ef5197cd9402efecca48283189c1677946f7/form.js' crossorigin='anonymous' id='fs_837a3365c12e44fe13ff35bf3411ef5197cd9402efecca48283189c1677946f7'></script> */}
+            
             <div className='contact' style={{ backgroundImage: 'url("Map.png")' }}>
                 <div className='title'>
                     contact <br /> us.
@@ -82,7 +82,7 @@ function Contact_Us() {
                             value={email} placeholder='Email address'  />
                         <input value={message}
                             onChange={onMessageChange} placeholder='Message' type='text' />
-                        <input type="submit" className='btn' onClick={(e) =>{e.preventDefault(); onSubmit()}}>Send</input>
+                        <button type="submit" className='btn' onClick={(e) =>{e.preventDefault(); onSubmit()}}>Send</button>
                     </form>
                     <span> Or write us on</span>
                     <div className='icons'>
