@@ -6,7 +6,10 @@
     display: flex;
 min-height: 100vh;
     font-family: 'Poppins', sans-serif;
-    /* height: 100vh; */
+
+    }
+    .center{
+        align-items: center;
     }
     .title{
         font-weight: 600;
@@ -21,7 +24,7 @@ min-height: 100vh;
 .btn{
     font-family: 'Poppins', sans-serif !important;
 
-    width: 230px;
+    width: 200px;
     padding: 10px;
     outline: none;
     font-weight: 600;
@@ -60,7 +63,7 @@ min-height: 100vh;
         width: 80%;
         display: flex;
         flex-direction: column;
-        padding: 5vh;
+        padding: 3vh;
         justify-content: center; 
                height: 100%;
         /* background-color: antiquewhite; */
@@ -141,6 +144,10 @@ margin-top: 2vh;
         .d1
         {
             flex-direction: column;
+           
+        }
+        .center{
+            align-items: inherit;
         }
         .title{
             font-size: 3rem;

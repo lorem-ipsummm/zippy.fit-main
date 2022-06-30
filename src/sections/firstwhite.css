@@ -1,5 +1,5 @@
 .white1{
-    height:25vh;
+    /* height:25vh; */
    
 
 }
@@ -13,8 +13,14 @@
 
 
 }
+.mimage-child{
+    margin: 20px;
+}
 .mimage{
     overflow: hidden;
-    /* margin-left: -40px; */
+ flex-wrap: wrap;
     display: flex;
+    align-items: center;
+    padding: 40px;
+    justify-content: center;
 }

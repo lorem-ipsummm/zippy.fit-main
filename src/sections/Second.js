@@ -2,7 +2,7 @@ import React from 'react'
 import "./fifth.css"
 function Second() {
   return (
-    <div className="d1">
+    <div className="d1 center" >
       <div className='text'>
         <span className='title' style={{ marginLeft: "48px" }}>
           run is now
@@ -16,7 +16,7 @@ function Second() {
         <button className='btn' style={{ marginLeft: "48px" }} href="#">Know More</button>
       </div>
       <div className='img-fifth'>
-        <img width={200} src="second.png" alt='' />
+        <img  src="second.png" alt='' />
       </div>
     </div>
   );

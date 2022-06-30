@@ -132,6 +132,7 @@ overflow-x: scroll;
         .d1
         {
             flex-direction: column;
+
         }
         .title{
             font-size: 3rem;
