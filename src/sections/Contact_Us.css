@@ -5,6 +5,8 @@
     color: white;
     display: flex;
     background-position: center;
+       background-size: cover;
+
     padding: 60px;
     align-items: center;
     justify-content: space-between;
