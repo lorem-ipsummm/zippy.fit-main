@@ -130,7 +130,7 @@ padding:10px 20px;
 
   
 .modal {
-    z-index: 4;
+    z-index: 5;
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
    text-align: center;
