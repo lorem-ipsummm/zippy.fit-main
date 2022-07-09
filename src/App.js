@@ -8,6 +8,7 @@ import WhiteList from './sections/WhiteList';
 import TnC from './sections/TnC';
 import Privacy_policy from './sections/Privacy_policy';
 import {Navigate} from "react-router-dom"
+import Ref from './sections/Ref';
 function App() {
   // var ip = require("ip");
   // console.dir ( ip.address() );
@@ -17,6 +18,7 @@ function App() {
    <BrowserRouter>
     <Routes>
     <Route exact path="/" element={<Navigate to="/home"/>} />
+    <Route path="/refer" element={<Ref />} />
 
         <Route path="/Home" element={<Home />} />
         <Route path="/Whitelist" element={<WhiteList />} />

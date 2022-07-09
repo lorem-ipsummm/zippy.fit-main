@@ -7,7 +7,7 @@ export const isEmpty = (val) => {
   return true;
 };
 
-export const validateEmail = (val) => {
+const validateEmail = (val) => {
   if (val.length === 0) {
     return false;
   }
@@ -20,3 +20,4 @@ export const validateEmail = (val) => {
 console.log(val)
   return true
 };
+export default validateEmail

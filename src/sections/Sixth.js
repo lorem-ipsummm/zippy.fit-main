@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import "./sixth.css";
+import Ref from './Ref';
+import { Toaster } from 'react-hot-toast';
 function Sixth() {
   const [indoor, setindoor] = useState(true)
   const inorout = indoor ? (<>
@@ -61,7 +63,7 @@ function Sixth() {
   return (
     <>
       <div className='main' id="howitworks" >
-
+      <div><Toaster/></div>
         {/* <b>how it works</b> */}
         <div className='.btn-cont'>
 
@@ -88,6 +90,10 @@ function Sixth() {
             <button onClick={() => {
               var modal = document.getElementById("myModal2");
               modal.style.display = "block";
+              var x=window.scrollX;
+    var y=window.scrollY;
+    window.onscroll=function(){window.scrollTo(x, y);};
+              
             }} className='btn add' id='referf'> Refer a friend</button>
 
           </div>
@@ -100,13 +106,16 @@ function Sixth() {
 
       </div>
       <div className="photo">
-        {/* <span  style={{opacity: '0.4' , fontSize: '8rem' , fontWeight: '800'}}>coming soon</span> */}
+       
       </div>
       <div id="myModal2" class="modal">
 
         <div class="modal-content">
+  
           <span onClick={() => {
             var modal = document.getElementById("myModal2");
+            window.onscroll=function(){};
+
             modal.style.display = "none";
           }} class="close">&times;</span>
           <img className='refer' src='whitelist.png' alt=''>
@@ -118,14 +127,8 @@ function Sixth() {
             additional 1 month complimentary and your friend gets 3 months.
             thanks to you!
           </div> <br />
-          {/* <button onClick={() => {
-            window.location.assign("mailto:sunny@zippy.fit");
-          }} className='btn add'> Write To Us</button> */}
-          {/* <p>Get your club enlisted</p> */}
-          <form method='POST'>
-            <input className="inp" type="text" name="email" placeholder='adam.smith@example.com' required />
-            <br/><button className='btn2' type='submit'> Add friend </button>
-          </form>
+          <Ref/>
+          {/* <i className="fas fa-spinner fa-spin"></i> */}
         </div>
 
       </div>
