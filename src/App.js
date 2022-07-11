@@ -18,7 +18,7 @@ function App() {
    <BrowserRouter>
     <Routes>
     <Route exact path="/" element={<Navigate to="/home"/>} />
-    <Route path="/refer" element={<Ref />} />
+
 
         <Route path="/Home" element={<Home />} />
         <Route path="/Whitelist" element={<WhiteList />} />

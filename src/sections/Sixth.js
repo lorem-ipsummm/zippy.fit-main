@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import "./sixth.css";
 import Ref from './Ref';
 import { Toaster } from 'react-hot-toast';
+
 function Sixth() {
   const [indoor, setindoor] = useState(true)
   const inorout = indoor ? (<>
@@ -64,10 +65,10 @@ function Sixth() {
     <>
       <div className='main' id="howitworks" >
       <div><Toaster/></div>
-        {/* <b>how it works</b> */}
-        <div className='.btn-cont'>
+   
+        <div className='btn-cont'>
 
-          <button className='btn' id={indoor ? "" : "outline"} onClick={() => setindoor(true)} href="#">Outdoor running</button>
+          <button className='btn1' id={indoor ? "" : "outline"} onClick={() => setindoor(true)} href="#">Outdoor running</button>
           <button className='btn1' id={!indoor ? "" : "outline"} onClick={() => setindoor(false)} href="#">Indoor running</button>
         </div>
         <div className='ph'>

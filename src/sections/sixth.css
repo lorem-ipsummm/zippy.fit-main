@@ -14,6 +14,10 @@
 height:60vh;
 align-items: center;
 }
+.btn-cont{
+    display: flex;
+    align-items: center;
+}
 .btn-container{
     text-align: center;
     width: 100%;
@@ -114,6 +118,9 @@ text-align: center;
     color: white;
     width: 60%;
 }
+.btn{
+    width: fit-content;
+}
 @media  only screen and (max-width: 600px){
     
 .inp{
@@ -128,6 +135,9 @@ text-align: center;
     height: 180px;
 
 
+}
+.btn-cont{
+    flex-direction: column;
 }
 
 
