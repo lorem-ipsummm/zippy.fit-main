@@ -118,9 +118,7 @@ text-align: center;
     color: white;
     width: 60%;
 }
-.btn{
-    width: fit-content;
-}
+
 @media  only screen and (max-width: 600px){
     
 .inp{

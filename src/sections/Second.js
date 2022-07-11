@@ -4,7 +4,7 @@ function Second() {
   return (
     <div className="d1 center" >
       <div className='text'>
-        <span className='title' style={{ marginLeft: "10vw" }}>
+        <span className='title' style={{ marginLeft: "50px" }}>
           run is now
           <br />
           immersive

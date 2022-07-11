@@ -7,6 +7,8 @@ import { wind } from 'fontawesome';
 import axios from "axios"
 import { APIUrl } from "../api"
 import toast,{Toaster} from 'react-hot-toast';
+import validateEmail from "./helper"
+import { useRef } from 'react';
 function WhiteList() {
 
     const [user, setUser] = useState({
@@ -25,29 +27,44 @@ function WhiteList() {
         // toast.success("hello")
         event.preventDefault();
 
-        const {email } = user;
-    console.log(email);
+        const {email} = user;
+        console.log(email);
         var data = new FormData();
         data.append('email',email);
-        const response = await axios.post(`${APIUrl}/api/v1/app/join-waitlist`, {
+        validateEmail(email)
+        if(validateEmail(email))
+        {const response = await axios.post(`${APIUrl}/api/v1/app/join-waitlist`, {
             email:email,
             base_url: window.location.origin,
           })
           console.log(response);
+          if (response.data.code === 2000) {
+            toast.success(response.data.message);
+            setUser({
+                email: " ",
+            });
+          
+          }
+           else toast.error(response.data.message)
+            
 
           
         
-    };
+    }
+    else {eminp.current.reportValidity() ;
+    }
+
+}
     
 
-
+const eminp = useRef();
 
     return (
 <>
 <Navbar/>
 
+<div><Toaster/></div>
 <div className='whitelist-cont'>
-{/* <div><Toaster/></div> */}
 <div className='whitelist-img'>
     <img src='whitelist.png'  alt=''></img>
 
@@ -61,7 +78,7 @@ function WhiteList() {
         <br/>Hey there! so glad to have you part of our growing community.
         Please click the link below so that we know you are, well you!</span> <br/>
     <form method='POST'>
-        <input type="text" name= "email" placeholder='adam.smith@example.com'
+        <input ref={eminp} type="email" name= "email" placeholder='adam.smith@example.com'
         value={user.email}
         onChange={getUserData} 
         autoComplete='off'

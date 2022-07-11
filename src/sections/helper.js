@@ -2,22 +2,23 @@ export const isEmpty = (val) => {
   if (val.length === 0) {
     return false;
   }
-  console.log(val)
+  // console.log(val)
 
   return true;
 };
 
-const validateEmail = (val) => {
+export const validateEmail = (val) => {
+  // console.log(val)
   if (val.length === 0) {
     return false;
   }
 
-  const re =
-    /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  if (!re.test(String(val).toLowerCase())) {
-    return false;
-  }
-console.log(val)
-  return true
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+ if(val.match(mailformat))
+ {
+  
+    return true;}
+    else return false;
+  
 };
 export default validateEmail

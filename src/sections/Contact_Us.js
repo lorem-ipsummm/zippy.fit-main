@@ -7,6 +7,9 @@ import { isEmpty, validateEmail } from "./helper";
 import "./Whitelist.css"
 import axios from "axios";
 import async from 'hbs/lib/async';
+import { Toaster } from 'react-hot-toast';
+import toast from 'react-hot-toast';
+import { useRef } from 'react';
 function Contact_Us() {
     const [email, setEmail] = useState("");
     const [name, setName] = useState("");
@@ -29,33 +32,78 @@ function Contact_Us() {
         setMessage(e.target.value);
     };
 
- 
+ const nameinp = useRef();
+ const emailinp = useRef();
+ const msginp = useRef();
+
 
     const onSubmit =async () => {
-    //    console.log(email + name +message)
+ 
+       if (!isEmpty(name)){
+ 
+         nameinp.current.reportValidity();
+         return;
+         }
 
-        //   if (!validateEmail(email) || !isEmpty(name) || !isEmpty(message)) {
+         else if(!validateEmail(email)){ 
+emailinp.current.reportValidity();
+return;
+
+          }
+                      
+                    else  if (!isEmpty(message)){
+           
+
+                        msginp.current.reportValidity();
+                   return;
+                                  }
+
+else {
+       var data = new FormData();
+        data.append('email',email);
+    
+        {const response = await axios.post(`${APIUrl}/api/v1/app/contact`, {
+            email:email,
+            message:message,
+            name: name
+          })
+    console.log(response)
+          if (response.data.code === 2006) {
+            toast.success(response.data.message);
           
-   
-        //     return;
+          
+          }
+           else toast.error(response.data.message)
+        
+}
 
-        //   } else {
-        //     setContactLoader(true);
-        //     const response = await axios.post(`${APIUrl}/api/v1/app/contact`, {
-        //       name,
-        //       email,
-        //       message,
-        //     });
-        //     if (response.data.status && response.data.code === 2006) {
-        //       alert("Message sent succesfully")
-        //       setName("");
-        //       setEmail("");
-        //       setMessage("");
+    
+        
+
+      
+    
+}
+
+
+}
+        // } else {
+            // setContactLoader(true);
+            // const response = await axios.post(`${APIUrl}/api/v1/app/contact`, {
+            //   name,
+            //   email,
+            //   message,
+            // });
+            // if (response.data.status && response.data.code === 2006) {
+            //   alert("Message sent succesfully")
+            //   setName("");
+            //   setEmail("");
+            //   setMessage("");
             
-        //     }
+            // }
           
         // }
-    };
+
+
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -65,7 +113,7 @@ function Contact_Us() {
     return (
         <>
             <Navbar />
-            
+            <div><Toaster/></div>
             <div className='contact' style={{ backgroundImage: 'url("Map.png")' }}>
                 <div className='title'>
                     contact <br /> us.
@@ -77,10 +125,10 @@ function Contact_Us() {
                     </span>
                     <span> We would love to hear from you!</span>
                     <form>
-                        <input value={name} onChange={onNameChange} placeholder='Name' type='text' />
-                        <input type="email" onChange={onEmailChange}
+                        <input required ref={nameinp} value={name} onChange={onNameChange} placeholder='Name' type='text' />
+                        <input required ref={emailinp} type="email" onChange={onEmailChange}
                             value={email} placeholder='Email address'  />
-                        <input value={message}
+                        <input required ref={msginp} value={message}
                             onChange={onMessageChange} placeholder='Message' type='text' />
                         <button type="submit" className='btn' onClick={(e) =>{e.preventDefault(); onSubmit()}}>Send</button>
                     </form>
