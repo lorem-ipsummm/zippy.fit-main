@@ -8,6 +8,7 @@
        background-size: cover;
 
     padding: 60px;
+    min-height: 80vh;
     align-items: center;
     justify-content: space-between;
 }
@@ -47,6 +48,11 @@
     border: 1px solid rgb(83, 83, 83);
    /* outline:none;  */
    padding: 10px;
+}
+   @media  only screen and (max-width: 1000px){
+.contact-child{
+    width: 46vw;
+}
 }
 
 @media  only screen and (max-width: 600px){

@@ -16,7 +16,7 @@ flex-direction: column;
     background: hsla(25, 22%, 36%, 1);
 }
 .foot-para{
-
+margin-top: 20px;
 }
 .profiles-cont{
     display: flex;

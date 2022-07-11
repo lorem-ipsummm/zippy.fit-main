@@ -4,6 +4,9 @@ import Navbar from './Navbar';
 import { useEffect } from 'react';
 import "./Whitelist.css"
 import { wind } from 'fontawesome';
+import axios from "axios"
+import { APIUrl } from "../api"
+import toast,{Toaster} from 'react-hot-toast';
 function WhiteList() {
 
     const [user, setUser] = useState({
@@ -19,35 +22,20 @@ function WhiteList() {
         setUser({ ...user, [name]: value});
     };
     const postData = async(event) => {
+        // toast.success("hello")
         event.preventDefault();
 
         const {email } = user;
-console.log(email);
+    console.log(email);
         var data = new FormData();
         data.append('email',email);
-console.log(data)    
-        if(email){
-            const res = await fetch("https://zippydata-2438f-default-rtdb.firebaseio.com/zippydataform.json",{
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify({email}),
-        
-        });
+        const response = await axios.post(`${APIUrl}/api/v1/app/join-waitlist`, {
+            email:email,
+            base_url: window.location.origin,
+          })
+          console.log(response);
 
-        if(res){
-            setUser({
-                email:"",
-            });
-
-            alert("Whitelisted Successfully");
-            }
-        }
-        else{
-            alert("Enter the email!");
-        }
-
+          
         
     };
     
@@ -59,7 +47,7 @@ console.log(data)
 <Navbar/>
 
 <div className='whitelist-cont'>
-
+{/* <div><Toaster/></div> */}
 <div className='whitelist-img'>
     <img src='whitelist.png'  alt=''></img>
 

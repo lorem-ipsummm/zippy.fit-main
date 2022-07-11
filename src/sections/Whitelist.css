@@ -27,6 +27,7 @@
 
 .whitelist-info form {
     outline: none;
+    display: flex;
     margin: 10px 0px;
     height: 50px;
     z-index: 1;
@@ -42,7 +43,7 @@
     font-weight: 700;
     font-size: 1.2rem;
     position: relative;
-    /* top: -1px; */
+
     background-color: #0086FB;
     color: white;
 
@@ -79,11 +80,25 @@
 
 .whitelist-img img {
     height: 80vh;
+
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px){
     .whitelist-cont {
         flex-direction: column;
+
     }
+    .whitelist-info button {
+        height: 120%;
+    }
+
+.whitelist-img img {
+    height: 60vh;
+
+
+}
+}
+@media only screen and (max-width: 600px) {
+ 
     .whitelist-info button{
         font-size:0.9rem;
     }
