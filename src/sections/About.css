@@ -4,7 +4,7 @@
     /* heigsht: 100vh; */
 color: white;
 display: flex;
-padding: 2vh;
+padding: 4vh;
 align-items: center;
 padding-top: 5vh;
 }
@@ -16,7 +16,7 @@ flex-direction: column;
     background: hsla(25, 22%, 36%, 1);
 }
 .foot-para{
-
+margin-top: 20px;
 }
 .profiles-cont{
     display: flex;

@@ -6,6 +6,7 @@ background-position: 80% 30%;
 display: flex;
 /* padding: 10vw; */
 padding: 2vw 10vw;
+    background-size: cover;
 color: white;
 /* text-shadow: 2px 2px  5px black; */
 justify-content: flex-end;

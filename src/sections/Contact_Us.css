@@ -1,12 +1,14 @@
 
 .contact{
     width: 100%;
-    height: 100vh;
     justify-content: space-between;
     color: white;
     display: flex;
     background-position: center;
+       background-size: cover;
+
     padding: 60px;
+    min-height: 80vh;
     align-items: center;
     justify-content: space-between;
 }
@@ -22,7 +24,7 @@
     width: 30vw;
     margin-top: 30px;
     /* min-width: 400px; */
-    height: 80vh;
+    /* height: 80vh; */
     border: 1px solid white;
     border-radius: 20px;
     color: black;
@@ -47,6 +49,11 @@
    /* outline:none;  */
    padding: 10px;
 }
+   @media  only screen and (max-width: 1000px){
+.contact-child{
+    width: 46vw;
+}
+}
 
 @media  only screen and (max-width: 600px){
     .contact{
@@ -62,11 +69,10 @@
     .contact span:nth-child(2)
     {
         display: flex;
-        background-color: #fff;
+  
     }
     .contact-child{
-        /* margin-top: 0px; */
-        height: 60vh;
+     
         width: 90vw;
     }
 }

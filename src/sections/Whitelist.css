@@ -27,14 +27,15 @@
 
 .whitelist-info form {
     outline: none;
+    display: flex;
     margin: 10px 0px;
-    height: 6vh;
+    height: 50px;
     z-index: 1;
 
     overflow: hidden;
     /* padding: 0px; */
     border-radius: 50px;
-    border: 2px solid rgb(202, 202, 202);
+    outline: 2px solid rgb(202, 202, 202);
 }
 
 .whitelist-info button {
@@ -42,12 +43,13 @@
     font-weight: 700;
     font-size: 1.2rem;
     position: relative;
-    /* top: -1px; */
+
     background-color: #0086FB;
     color: white;
+
     outline: none;
     border: none;
-    height: 6vh;
+    height: 100%;
     z-index: 2;
 }
 
@@ -76,13 +78,35 @@
     height: 50px;
 }
 
-@media only screen and (max-width: 600px) {
+.whitelist-img img {
+    height: 80vh;
+
+}
+@media only screen and (max-width: 1000px){
     .whitelist-cont {
         flex-direction: column;
+
+    }
+    .whitelist-info button {
+        height: 120%;
+    }
+
+.whitelist-img img {
+    height: 60vh;
+
+
+}
+}
+@media only screen and (max-width: 600px) {
+ 
+    .whitelist-info button{
+        font-size:0.9rem;
     }
 
     .whitelist-img img {
-        height: 50%;
+        width: 100vw;
+        height: auto;
+        margin-top: 10vh;
     }
 
 }

@@ -2,9 +2,9 @@ import React from 'react'
 import "./fifth.css"
 function Second() {
   return (
-    <div className="d1">
+    <div className="d1 center" >
       <div className='text'>
-        <span className='title' style={{ marginLeft: "48px" }}>
+        <span className='title' style={{ marginLeft: "50px" }}>
           run is now
           <br />
           immersive
@@ -16,7 +16,7 @@ function Second() {
         <button className='btn' style={{ marginLeft: "48px" }} href="#">Know More</button>
       </div>
       <div className='img-fifth'>
-        <img src="second.png" alt='' />
+        <img id='second' src="second.png" alt='' />
       </div>
     </div>
   );

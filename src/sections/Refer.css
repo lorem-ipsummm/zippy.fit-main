@@ -1,0 +1,88 @@
+.refer-wrapper {
+  padding: 10%;
+}
+
+.refer-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.refer-img img {
+  height: 500px;
+  width: 100%;
+  object-fit: contain;
+}
+
+.refer-desc {
+  margin-top: 100px;
+  font-weight: 600;
+  font-size: 1.5vw;
+  text-align: center;
+  margin-bottom: 100px;
+  line-height: 43.66px;
+}
+
+.input-refer {
+  margin-top: 40px;
+  padding: 0 20%;
+}
+
+.input-label {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.input-base {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.input-style {
+  width: 70%;
+  margin-right: 20px;
+}
+
+.inside-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inside-button-image img {
+  height: 20px;
+  margin-left: 5px;
+}
+
+.inside-button-image-add img {
+  height: 16px;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 960px) {
+  .input-refer {
+    padding: 0;
+  }
+
+  .refer-desc {
+    margin-top: 0;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .input-refer {
+    padding: 0;
+  }
+
+  .refer-desc {
+    margin-top: 0;
+    font-size: 15px;
+  }
+
+  .input-style {
+    width: 50%;
+    margin-right: 20px;
+  }
+}
