@@ -51,8 +51,8 @@ function Navbar() {
         </a></Link>
 
 
-        <a href='#' onClick={() => setlinksopen(!linksopen)}>FAQs</a>
-        <a href='# ' onClick={() => setlinksopen(!linksopen)}>WhitePaper</a>
+        {/* <a href='#' onClick={() => setlinksopen(!linksopen)}>FAQs</a>
+        <a href='# ' onClick={() => setlinksopen(!linksopen)}>WhitePaper</a> */}
 
       </div>
       <Outlet />
