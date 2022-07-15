@@ -9,7 +9,6 @@ import TnC from './sections/TnC';
 import Privacy_policy from './sections/Privacy_policy';
 import { home } from 'fontawesome';
 import {Navigate, Redirect} from "react-router-dom";
-import {Navigate} from "react-router-dom"
 import Ref from './sections/Ref';
 
 function App() {
